@@ -1,0 +1,479 @@
+
+.hero{
+  display: flex;
+  height: 100vh;
+  background-color: #342f2f;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  color: #FFFFFF;
+
+}
+
+.hero h1 {
+  font-size: 60px;
+  color:#FFFFFF;
+  margin: 2%;
+  font-size: 3rem;
+  font-family: Montserrat;
+}
+
+.hero-image{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.hero-image img{
+  right: 5%;
+  position: absolute;
+  cursor: pointer;
+}
+
+#car-Infor{
+  box-shadow: 2px 2px 5px rgb(1, 1, 1);
+  display: none;
+  width: 300px;
+  height: 100px;
+  border-radius: 10%;
+  top: 10%;
+  background-color: #555252;
+}
+
+#car-Infor.active{
+  display: flex;
+  justify-content: center;
+}
+
+.explore-btn{
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  margin: 2%;
+  background-color: #FFD700;
+  color: #0D0D0D;
+  font-size: 1.2rem;
+}
+
+.explore-btn:hover {
+  background-color: #e6c200;
+  color: #0D0D0D;
+  transform: scale(1.05);
+}
+
+.tag-list{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 65%;
+
+}
+
+.inner{
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+  animation: scrollLoop 20s linear infinite;
+}
+
+.brand{
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  background-color: #e4ecf2;
+  margin-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.brand:hover{
+  width:  320px;
+  height: 320px;
+}
+
+.discover-section {
+    background-color: #000000; 
+    padding: 80px 0; 
+    text-align: center; 
+    color: #FFFFFF; 
+    overflow: hidden;}
+
+.discover-content {
+    max-width: 900px; 
+    margin: 0 auto 60px auto; 
+    padding: 0 20px; 
+}
+
+.car-gallery-wrapper {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 60px; 
+}
+
+.car-gallery {
+    display: flex; 
+    gap: 30px;
+    padding: 0 5%;
+    flex-shrink: 0;
+    justify-content: flex-start;
+}
+
+.car-item {
+    min-width: 320px; 
+    background-color: #3A3A3A;
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0; 
+}
+
+.car-item:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.car-item img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover; 
+    display: block; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.car-details {
+    padding: 20px;
+    text-align: left; /* Align text within card */
+}
+
+.car-details h3 {
+    font-size: 1.5em;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.car-details p {
+    font-size: 0.95em;
+    color: #E0E0E0;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.btn-view-details {
+    display: inline-block;
+    background-color: #FFC107; 
+    color: #2C2C2C; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view-details:hover {
+    background-color: #e6a800; 
+}
+
+.discover-cta {
+    margin-top: 40px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #FFC107; /* Your vibrant Yellow/Gold */
+    color: #2C2C2C; /* Dark text for contrast */
+    padding: 15px 35px; /* Larger padding for main CTA */
+    border-radius: 8px; /* Slightly rounded corners */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none; /* Ensure no default button border */
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #e6a800; /* Slightly darker yellow on hover */
+    transform: translateY(-3px); /* Subtle lift on hover */
+}
+
+.journey-section {
+    background-color: #2C2C2C;
+    padding: 80px 0; 
+    text-align: center; 
+    color: #FFFFFF; 
+    overflow: hidden;
+}
+
+.journey-content {
+    max-width: 900px; 
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+.journey-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px; 
+    margin: 0 auto 60px auto; 
+    padding: 0 20px; 
+}
+
+.journey-content h2 {
+    font-size: 3em; 
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.journey-card {
+    background-color: #3A3A3A; 
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    min-height: 400px; 
+}
+
+.journey-icon-wrapper {
+    width: 80px; 
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC107; 
+    border-radius: 50%; 
+    margin-bottom: 25px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.journey-icon-wrapper img {
+    width: 60%; 
+    height: 60%;
+    object-fit: contain; 
+}
+
+.journey-details {
+    flex-grow: 1;
+    width: 100%; 
+}
+
+.journey-details h3 {
+    font-size: 1.6em;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.journey-details p {
+    font-size: 1em;
+    color: #E0E0E0;
+    line-height: 1.5;
+    margin-bottom: 25px; 
+    flex-grow: 1; 
+}
+
+.btn-read-more {
+    display: inline-block;
+    color: #FFC107; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95em;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn-read-more:hover {
+    border-color: #FFC107;
+    color: #FFD700; 
+}
+
+.journey-cta {
+    margin-top: 40px; 
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #FFC107; /* Your vibrant Yellow/Gold */
+    color: #2C2C2C; 
+    padding: 15px 35px; 
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none; 
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #e6a800; 
+    transform: translateY(-3px); 
+  }
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image {
+    top: 60%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+
+  .hero-content{
+    top: 20%;
+  }
+
+  .tag-list{
+    top: 90%;
+  }
+
+  .brand{
+    width: 100px;
+    height: 100px;
+  }
+
+  .brand:hover{
+    width: 150px;
+    height: 150px;
+  }
+
+  #car-Infor{
+  position: absolute; 
+  display: none;
+  bottom: 10%; 
+  top: -80px;  
+  left: 10%; 
+  width: 200px;
+  height: 100px;
+  border-radius: 10%;
+  z-index: 5;
+  background-color: #282727;
+  }
+
+  #car-Infor.active{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .car-gallery-wrapper {
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 10px; 
+  }
+ 
+  .car-gallery {
+    display:flex; 
+    gap: 10px;
+    flex-direction: column;
+}
+
+.car-item {
+      min-width: 100px; 
+      background-color: #3A3A3A;
+      border-radius: 12px;
+      overflow: hidden; 
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      margin-top: 2%;
+      flex-shrink: 0; 
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px; /* Larger padding for main CTA */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+
+}
+
+
+
+
